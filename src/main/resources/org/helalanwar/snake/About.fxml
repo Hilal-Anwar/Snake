@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="489.0" prefWidth="903.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.helalanwar.snake.About">
+   <children>
+      <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="266.0" fitWidth="215.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="NEVER">
+               <image>
+                  <Image url="@icon.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <VBox prefHeight="576.0" HBox.hgrow="ALWAYS">
+                  <Label text="Snake" VBox.vgrow="ALWAYS">
+                  <VBox.margin>
+                     <Insets left="10.0" right="10.0" top="10.0" />
+                  </VBox.margin>
+                  <font>
+                     <Font size="73.0" />
+                  </font>
+                  </Label>
+               <Label text="1.0.0">
+                  <VBox.margin>
+                     <Insets left="10.0" right="10.0" top="10.0" />
+                  </VBox.margin>
+                  <font>
+                     <Font size="27.0" />
+                  </font>
+               </Label>
+               <TextArea fx:id="view" editable="false" text="Snake&#10;Copyright (C) 2020-21 Helal Anwar&#10;             &#10;Version:1.0.0&#10;Author :Helal Anwar&#10;Email  :hilal123anwar@gmailcom&#10;             &#10;The project github link is&#10;https://github.com/Hilal-Anwar/Snake&#10;If you find any bug in the game then please do open a issue on github&#10;If you have some suggestions about the game please do mail me." VBox.vgrow="ALWAYS">
+                  <font>
+                     <Font size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </VBox.margin>
+               </TextArea>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="972.0">
+         <children>
+            <StackPane HBox.hgrow="ALWAYS">
+               <children>
+                  <Hyperlink onAction="#about_game" text="About" />
+               </children>
+            </StackPane>
+            <StackPane HBox.hgrow="ALWAYS">
+               <children>
+                  <Hyperlink onAction="#license" text="License" />
+               </children>
+            </StackPane>
+            <StackPane HBox.hgrow="ALWAYS">
+               <children>
+                  <Hyperlink onAction="#HowToPlay" text="How to play ?" />
+               </children>
+            </StackPane>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

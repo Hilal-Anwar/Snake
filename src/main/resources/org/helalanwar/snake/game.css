@@ -1,0 +1,12 @@
+
+.table-cell{
+-fx-font-size:25;
+-fx-font-family:"20th Century Font";
+}
+.table-view .label{
+-fx-font-size:25;
+-fx-font-family:"20th Century Font";
+}
+.progress-bar .track{
+-fx-background-color:transparent;
+}

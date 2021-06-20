@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.helalanwar.snake.DataBaseController">
+    <HBox alignment="CENTER" AnchorPane.leftAnchor="148.0" AnchorPane.rightAnchor="148.0">
+        <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </VBox.margin>
+        <Label alignment="CENTER" text="High Score" textFill="DODGERBLUE" underline="true">
+           <font>
+               <Font name="20th Century Font" size="38.0"/>
+           </font>
+        </Label>
+    </HBox>
+   <TableView fx:id="ScoreBoard" layoutX="67.0" layoutY="85.0" stylesheets="@game.css" VBox.vgrow="ALWAYS">
+     <columns>
+       <TableColumn fx:id="nameColumn" editable="false" prefWidth="171.0" sortable="false" text="Name" />
+       <TableColumn fx:id="ScoreColumn" editable="false" prefWidth="158.0" sortable="false" text="Score" />
+     </columns>
+      <columnResizePolicy>
+         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      </columnResizePolicy>
+      <VBox.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+   </TableView>
+</VBox>

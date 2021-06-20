@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="191.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.helalanwar.snake.DialogBox">
+   <TextField fx:id="name" layoutX="85.0" layoutY="100.0" />
+   <Button defaultButton="true" layoutX="216.0" layoutY="146.0" mnemonicParsing="false" onAction="#on_OK" prefHeight="25.0" prefWidth="63.0" text="OK" />
+   <Label layoutX="45.0" layoutY="104.0" text="Name" />
+   <ImageView fitHeight="56.0" fitWidth="41.0" layoutX="229.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@help.png" />
+      </image>
+   </ImageView>
+   <Label layoutX="14.0" layoutY="10.0" text="Snake Master">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="51.0" text="Enter the name" />
+</AnchorPane>

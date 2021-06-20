@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane stylesheets="@game.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.helalanwar.snake.SnakeBoardLayout">
+   <center>
+      <StackPane BorderPane.alignment="CENTER">
+         <Canvas fx:id="game_board" height="640.0" width="743.0"/>
+         <VBox fx:id="game_over_layer" alignment="CENTER" spacing="10.0" visible="false">
+            <Label text="Snake Master" textFill="RED">
+               <font>
+                  <Font name="Forte" size="48.0"/>
+               </font>
+            </Label>
+            <Label fx:id="final_score" text="0" textFill="RED">
+               <font>
+                  <Font name="Forte" size="30.0"/>
+               </font>
+            </Label>
+            <Label text="Enter space button to continue ..." textFill="RED">
+               <font>
+                  <Font name="Forte" size="30.0"/>
+               </font>
+            </Label>
+         </VBox>
+      </StackPane>
+   </center>
+   <top>
+      <StackPane style="-fx-background-color: #354822;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="top_image" fitHeight="58.0" fitWidth="742.0" pickOnBounds="true" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@texture.png" />
+               </image>
+            </ImageView>
+            <Label text="Snake" StackPane.alignment="CENTER">
+               <font>
+                  <Font name="Forte" size="49.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.6000000238418579" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="1.0" green="0.6000000238418579" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" blue="0.520011305809021" opacity="0.9900000095367432" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <effect>
+                  <DropShadow spread="0.8" />
+               </effect>
+            </Label>
+            <MenuButton focusTraversable="false" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Help" textFill="WHITE" StackPane.alignment="CENTER_RIGHT">
+              <items>
+                  <Menu mnemonicParsing="false" text="Sound">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@on.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <items>
+                        <CheckMenuItem fx:id="on" mnemonicParsing="false" onAction="#sound" selected="true" text="on" />
+                        <CheckMenuItem fx:id="off" mnemonicParsing="false" onAction="#sound" text="off" />
+                     </items>
+                  </Menu>
+                <MenuItem mnemonicParsing="false" onAction="#showHigh_Score" text="High score">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@score.png" />
+                           </image></ImageView>
+                     </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#showHigh_Score" text="About">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@about.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </MenuItem>
+              </items>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@help.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.79" />
+               </effect>
+
+            </MenuButton>
+         </children>
+      </StackPane>
+   </top>
+   <bottom>
+      <StackPane style="-fx-background-color: #354822;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="bottom_image" fitHeight="58.0" fitWidth="743.0" pickOnBounds="true" rotate="180.0" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@texture.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="length" alignment="CENTER" text="Snake length : 0" StackPane.alignment="BOTTOM_LEFT">
+               <font>
+                  <Font name="Forte" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.4428571428571429" startX="0.1523809523809524" startY="0.2571428571428571">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" blue="0.38471719622612" opacity="0.9900000095367432" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.21839080459770105">
+                           <color>
+                              <Color red="1.0" blue="0.38471719622612" opacity="0.9900000095367432" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.49819493293762207" opacity="0.9900000095367432" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <StackPane.margin>
+                  <Insets left="10.0" />
+               </StackPane.margin>
+               <effect>
+                  <DropShadow spread="0.7" />
+               </effect>
+            </Label>
+            <Label fx:id="score" text="Score : 0" StackPane.alignment="BOTTOM_RIGHT">
+               <font>
+                  <Font name="Forte" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endY="0.4428571428571429" startX="0.1523809523809524" startY="0.2571428571428571">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" blue="0.38471719622612" opacity="0.9900000095367432" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.21839080459770105">
+                           <color>
+                              <Color red="1.0" blue="0.38471719622612" opacity="0.9900000095367432" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.49819493293762207" opacity="0.9900000095367432" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <StackPane.margin>
+                  <Insets right="10.0" />
+               </StackPane.margin>
+               <effect>
+                  <DropShadow spread="0.7" />
+               </effect>
+            </Label>
+            <ProgressBar fx:id="progress" prefHeight="14.0" prefWidth="137.0" progress="0.0" stylesheets="@game.css" StackPane.alignment="TOP_RIGHT">
+               <StackPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </StackPane.margin>
+               <effect>
+                  <DropShadow spread="0.7" />
+               </effect></ProgressBar>
+         </children>
+      </StackPane>
+   </bottom>
+</BorderPane>

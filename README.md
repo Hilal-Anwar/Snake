@@ -27,5 +27,7 @@ You can use your keyboard keys to move the sanke in different directions
 
 ![Image of Standard mode](https://github.com/Hilal-Anwar/Snake/blob/master/Snakes_NcSTZ76KVI.png)
 
+# Download the game
+https://github.com/Hilal-Anwar/Snake/releases/download/v1.0.0/Snakes-1.0.0.exe
   
 

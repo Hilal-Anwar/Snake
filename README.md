@@ -18,5 +18,14 @@ You can use your keyboard keys to move the sanke in different directions
    
    
 # Some demos  of the game 
+
+![Image of Standard mode](https://github.com/Hilal-Anwar/Snake/blob/master/St7r2CElBx.gif)
+
+![Image of Standard mode](https://github.com/Hilal-Anwar/Snake/blob/master/Snakes_GoiC9RzGWY.jpg)
+
+![Image of Standard mode](https://github.com/Hilal-Anwar/Snake/blob/master/Snakes_DMUEfoG4Wi.png)
+
+![Image of Standard mode](https://github.com/Hilal-Anwar/Snake/blob/master/Snakes_NcSTZ76KVI.png)
+
   
 

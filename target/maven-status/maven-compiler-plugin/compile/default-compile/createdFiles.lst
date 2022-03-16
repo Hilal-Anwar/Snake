@@ -1,6 +1,5 @@
 org\helalanwar\snake\DialogBox.class
 org\helalanwar\snake\SnakeBoardLayout.class
-org\helalanwar\snake\Main.class
 org\helalanwar\snake\SnakeBoardLayout$2.class
 org\helalanwar\snake\HighScore.class
 module-info.class
@@ -13,3 +12,4 @@ org\helalanwar\snake\SnakeBoardLayout$1.class
 org\helalanwar\snake\About.class
 org\helalanwar\snake\DataBase.class
 org\helalanwar\snake\SnakeData.class
+org\helalanwar\snake\App.class

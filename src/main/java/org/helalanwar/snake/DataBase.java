@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 public class DataBase {
 
@@ -37,7 +38,7 @@ public class DataBase {
             }
             fileReader.close();
             bufferReader.close();
-            return decryptedMessage(line.toString()).lines().toList();
+            return decryptedMessage(line.toString()).lines().collect(Collectors.toList());
 
         } catch (IOException | NoSuchPaddingException | IllegalBlockSizeException | NoSuchAlgorithmException | BadPaddingException | InvalidKeyException e) {
             file.delete();
